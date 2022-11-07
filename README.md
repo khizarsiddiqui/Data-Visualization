@@ -25,3 +25,9 @@ Matplotlib assumes that your screen resolution is 100 pixels per inch;if this co
 # Rolling Dice
 The __init__() method takes one optional argument. With the Die class, when an instance of our die is created, the number of sides will always be six if no argument is included. If an argument is included, that value will set the number of sides on the die. (Dice are named for their number of sides: a six-sided die is a D6, an eight-sided die is a D8, and so on.) The roll() method uses the randint() function to return a random number
 between 1 and the number of sides. This function can return the starting value (1), the ending value (num_sides), or any integer between the two.
+
+# Rolling pair of die
+This graph shows the approximate results you’re likely to get when you roll a pair of D6 dice. As you can see, you’re least likely to roll a 2 or a 12 and most likely to roll a 7. This happens because there are six ways to roll a 7, namely: 1 and 6, 2 and 5, 3 and 4, 4 and 3, 5 and 2, or 6 and 1.
+
+# Rolling die of different sizes
+This graph shows the resulting chart. Instead of one most likely result, there are five. This happens because there’s still only one way to roll the smallest value (1 and 1) and the largest value (6 and 10), but the smaller die limits the number of ways you can generate the middle numbers: there are six ways to roll a 7, 8, 9, 10, and 11. Therefore, these are the most common results, and you’re equally likely to roll any one of these numbers.
